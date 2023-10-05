@@ -1,8 +1,11 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+
+import UIProvider from "@/providers/next-ui.provider";
+
+import { Navbar, Footer } from "@/components/layout";
+import { Divider } from "@nextui-org/react";
 
 export const metadata: Metadata = {
   title: "Nova Club",
@@ -12,9 +15,9 @@ export const metadata: Metadata = {
     icon: {
       url: "/icon.svg",
       type: "image/svg",
-    }
-  }
-  };
+    },
+  },
+};
 
 export default function RootLayout({
   children,
@@ -22,8 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="es">
+      <body className="dark">
+        <UIProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </UIProvider>
+      </body>
     </html>
   );
 }
