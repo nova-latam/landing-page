@@ -52,7 +52,7 @@ export default function MyNavbar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#">
+          <Button as={Link} color="primary" href="/aplicaciones">
             Únete
           </Button>
         </NavbarItem>

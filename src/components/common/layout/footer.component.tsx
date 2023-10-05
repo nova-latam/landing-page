@@ -2,7 +2,7 @@
 
 import { Divider } from "@nextui-org/react";
 import React from "react";
-import { InstagramLink } from "../common/links";
+import { InstagramLink } from "../links";
 
 export default function Footer() {
   return (

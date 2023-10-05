@@ -1,3 +1,4 @@
+import Layout from "@/components/common/layout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,9 +12,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="es">
-      <body className="dark">{children}</body>
-    </html>
-  );
+  return <>{children}</>;
 }

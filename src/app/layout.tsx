@@ -3,8 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import UIProvider from "@/providers/next-ui.provider";
-
-import { Navbar, Footer } from "@/components/layout";
+import Layout from "@/components/common/layout";
 
 export const metadata: Metadata = {
   title: "Nova Club",
@@ -27,9 +26,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="dark">
         <UIProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <Layout>{children}</Layout>
         </UIProvider>
       </body>
     </html>
