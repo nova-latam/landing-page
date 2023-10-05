@@ -1,8 +1,21 @@
 "use client";
 
-import { Button, divider } from "@nextui-org/react";
 import React from "react";
+import Image from "next/image";
+import { Button } from "@nextui-org/react";
 
-export default function Home() {
-  return <section className="min-h-screen">Home</section>;
+export default function Hero() {
+  return (
+    <section className="min-h-screen min-w-screen flex flex-col justify-center items-center">
+      <Image
+        src={"/images/logos/nova-full-1000x600.png"}
+        alt="Nova Club full logo"
+        height={1000}
+        width={600}
+      />
+      <Button size="lg" color="primary" variant="shadow">
+        Aplica ahora
+      </Button>
+    </section>
+  );
 }
