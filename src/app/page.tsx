@@ -3,7 +3,7 @@ import Sponsors from "@/components/home/sponsors.component";
 
 export default function App() {
   return (
-    <main>
+    <main className="bg-inherit">
       <Hero />
       <AboutUs />
       <Partners />

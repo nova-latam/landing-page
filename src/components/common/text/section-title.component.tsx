@@ -1,5 +1,11 @@
 import React from "react";
 
+import Text from "./text.component";
+
 export default function SectionTitle({ title }: { title: string }) {
-  return <p className="text-4xl font-bold">{title}</p>;
+  return (
+    <Text className="font-bold text-primary-1000 dark:text-primary-50" size="2xl">
+      {title}
+    </Text>
+  );
 }

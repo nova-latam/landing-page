@@ -3,17 +3,18 @@ import React from "react";
 export default function Button({
   variant = "primary",
   children,
-  ...props
+  onClick,
 }: {
-  variant?: "primary" | "secondary" | "alternative";
   children: React.ReactNode;
+  variant?: "primary" | "secondary" | "alternative";
+  onClick?: () => void;
 }) {
   const textColors = {};
 
   const colors = {
     primary: {
       light:
-        "bg-primary-600 hover:bg-primary-700 focus:ring-primary-300 text-primary-50",
+        "bg-primary-800 hover:bg-primary-800 focus:ring-primary-300 text-primary-50",
       dark: "dark:bg-primary dark:hover:bg-primary-700 dark:focus:ring-primary-300 text-primary-50",
     },
     secondary: {
@@ -30,8 +31,8 @@ export default function Button({
 
   return (
     <button
-      className={`text-contrast focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 ${colors[variant].light} ${colors[variant].dark}`}
-      {...props}
+      className={`focus:outline-none focus:ring-4 font-semibold rounded-full text-sm px-5 py-2.5 text-center ${colors[variant].light} ${colors[variant].dark}`}
+      onClick={onClick}
     >
       {children}
     </button>

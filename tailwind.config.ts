@@ -7,16 +7,16 @@ const config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/providers/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: { ...colors.cyan, DEFAULT: "#119AAD", 1000: "#1c0f30" },
+        primary: { ...colors.cyan, DEFAULT: "#119AAD", 1000: "#1c0f30", 0:"#FCFDFE" },
         secondary: {
           ...colors.amber,
           DEFAULT: colors.slate[50],
         },
-      },
-      darkMode: "class",
+      }
     },
   },
 };
