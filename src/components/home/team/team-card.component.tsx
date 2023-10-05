@@ -7,7 +7,7 @@ import { Text } from "@/components/common/text";
 export default function TeamCard({ member }: { member: TeamMember }) {
   return (
     <div className="p-8 flex flex-col justify-start w-80 min-w-[150px] min-h-[250px] max-w-[450px] max-h-[600px] 
-    rounded-xl gap-8 bg-primary-400 dark:bg-primary-800 shadow-lg">
+    rounded-xl gap-8 bg-primary/80 dark:bg-primary-800 shadow-lg">
       <div className="flex justify-center items-center">
         <Text
           className="font-semibold text-primary-1000 dark:text-primary-0"
