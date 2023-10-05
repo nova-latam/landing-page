@@ -8,7 +8,7 @@ export default function Section({
   className?: string;
 }) {
   return (
-    <section className={`min-h-screen min-w-screen flex flex-col justify-center items-center p-6 gap-4 ${className}`}>
+    <section className={`min-h-screen min-w-screen flex flex-col justify-center items-center p-6 gap-4 bg-primary-50 dark:bg-primary-950 ${className}`}>
       {children}
     </section>
   );

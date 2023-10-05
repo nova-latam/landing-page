@@ -2,8 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "@nextui-org/react";
 import { Section } from "@/components/common/containers";
+import { Button } from "@/components/common/buttons";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -14,9 +15,9 @@ export default function Hero() {
         height={1000}
         width={600}
       />
-      <Button size="lg" color="primary" variant="shadow">
-        Aplica ahora
-      </Button>
+      <Link href={"/postulaciones"}>
+        <Button>Aplica Ahora</Button>
+      </Link>
     </Section>
   );
 }

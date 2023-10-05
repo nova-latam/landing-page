@@ -1,12 +1,11 @@
 import React from "react";
-import { Avatar, Card } from "@nextui-org/react";
 import { TeamMember } from "./team.type";
 import { InstagramLink, LinkedInLink } from "@/components/common/links";
 import Image from "next/image";
 
 export default function TeamCard({ member }: { member: TeamMember }) {
   return (
-    <Card className="p-8 flex justify-start w-80 min-w-[150px] min-h-[250px] max-w-[450px] max-h-[600px] gap-8">
+    <div className="p-8 flex flex-col justify-start w-80 min-w-[150px] min-h-[250px] max-w-[450px] max-h-[600px] gap-8">
       <div className="flex justify-center items-center">
         <p className="text-3xl font-semibold">{member.title}</p>
       </div>
@@ -27,6 +26,6 @@ export default function TeamCard({ member }: { member: TeamMember }) {
       <div className="flex-col justify-center items-center">
         <p className="text-center italic">{member.bio}</p>
       </div>
-    </Card>
+    </div>
   );
 }

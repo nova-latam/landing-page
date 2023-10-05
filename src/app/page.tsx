@@ -3,7 +3,7 @@ import Sponsors from "@/components/home/sponsors.component";
 
 export default function App() {
   return (
-    <main className="min-h-screen min-w-screen px-2 pb-10">
+    <main>
       <Hero />
       <AboutUs />
       <Partners />

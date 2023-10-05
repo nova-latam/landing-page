@@ -2,7 +2,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 
-import UIProvider from "@/providers/next-ui.provider";
 import Layout from "@/components/common/layout";
 
 export const metadata: Metadata = {
@@ -23,11 +22,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className="dark">
-        <UIProvider>
+    <html lang="es" className="light">
+      <body className="bg-primary-50 dark:bg-primary-950">
           <Layout>{children}</Layout>
-        </UIProvider>
       </body>
     </html>
   );
