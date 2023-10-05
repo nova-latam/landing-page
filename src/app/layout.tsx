@@ -6,7 +6,7 @@ import UIProvider from "@/providers/next-ui.provider";
 import Layout from "@/components/common/layout";
 
 export const metadata: Metadata = {
-  title: "Nova Club",
+  title: "Nova Club | Creadores del futuro",
   description:
     "El Club de Innovación NOVA EPN es una comunidad de estudiantes apasionados por la innovación y la tecnología. Creemos que la innovación es la clave para resolver los problemas más urgentes del mundo, y estamos comprometidos a desarrollar la próxima generación de innovadores.",
   icons: {
