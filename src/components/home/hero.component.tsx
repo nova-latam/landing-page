@@ -3,10 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import { Section } from "@/components/common/containers";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen min-w-screen flex flex-col justify-center items-center">
+    <Section>
       <Image
         src={"/images/logos/nova-full-1000x600.png"}
         alt="Nova Club full logo"
@@ -16,6 +17,6 @@ export default function Hero() {
       <Button size="lg" color="primary" variant="shadow">
         Aplica ahora
       </Button>
-    </section>
+    </Section>
   );
 }
