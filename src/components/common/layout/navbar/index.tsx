@@ -13,14 +13,18 @@ export default function Navbar() {
 
   return (
     <header className="w-screen">
-      <nav className="p-4 flex w-full z-40 h-16 items-center justify-between fixed top-0 bg-primary dark:bg-primary-950 shadow-md">
-        <Button aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}>
-          -
-        </Button>
+      <nav className="p-4 w-full z-40 h-16 grid grid-cols-[1fr,3fr,1fr] justify-center content-center fixed top-0 bg-primary dark:bg-primary-950 shadow-md">
+        <div className="col-start-1 col-end-1">
+          <Button aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}>
+            -
+          </Button>
+        </div>
 
-        <DesktopItems menuItems={menuItems} />
+        <div className="col-span-3 px-24">
+          <DesktopItems menuItems={menuItems} />
+        </div>
 
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 col-start-5 col-end-5">
           <DarkModeButton />
           <ApplyButton />
         </div>

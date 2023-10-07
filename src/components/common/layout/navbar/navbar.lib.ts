@@ -19,5 +19,9 @@ export const menuItems: MenuItem[] = [
     {
         name: "Proyectos",
         href: "/proyectos"
+    },
+    {
+        name: "Recursos",
+        href: "/recursos"
     }
 ]

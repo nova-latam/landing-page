@@ -3,10 +3,10 @@
 import React from "react";
 import { nanoid } from "nanoid";
 
-import { SectionSubtitle, SectionTitle } from "@/components/common/text";
 import TeamCard from "./team-card.component";
-
 import { teamMembers } from "./team.lib";
+
+import { SectionSubtitle, SectionTitle } from "@/components/common/text";
 import { Section } from "@/components/common/containers";
 
 export default function Team() {
