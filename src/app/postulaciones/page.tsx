@@ -1,9 +1,5 @@
-import ApplicationForm from "./form.component";
+import { Hero } from "@/components/views/applications";
 
-export default function App() {
-  return (
-    <main className="w-screen h-screen">
-      <ApplicationForm />
-    </main>
-  );
+export default function Applications() {
+  return <Hero />;
 }

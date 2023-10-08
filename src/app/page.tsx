@@ -1,5 +1,4 @@
-import { Contact, Team, Hero, Partners, AboutUs } from "@/components/home";
-import Sponsors from "@/components/home/sponsors.component";
+import { Contact, Team, Hero, Partners, AboutUs, Sponsors } from "@/components/views/home";
 
 export default function App() {
   return (

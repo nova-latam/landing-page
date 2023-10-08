@@ -7,7 +7,7 @@ import Layout from "@/components/layout";
 export const metadata: Metadata = {
   title: "Nova Club | Creadores del futuro",
   description:
-    "El Club de Innovación NOVA EPN es una comunidad de estudiantes apasionados por la innovación y la tecnología. Creemos que la innovación es la clave para resolver los problemas más urgentes del mundo, y estamos comprometidos a desarrollar la próxima generación de innovadores.",
+    "Nova Club es una comunidad de estudiantes apasionados por la innovación y la tecnología. Creemos que la innovación es la clave para resolver los problemas más urgentes del mundo, y estamos comprometidos a desarrollar la próxima generación de innovadores.",
   icons: {
     icon: {
       url: "/icon.svg",
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="antialiased w-screen">
+      <body className="antialiased">
         <Layout>
           <main className="bg-primary-50 dark:bg-primary-950 transition-colors duration-1000">
             {children}

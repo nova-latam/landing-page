@@ -14,7 +14,7 @@ export default function Team() {
     <Section>
       <SectionTitle title={"Nuestro Equipo"} />
       <SectionSubtitle subtitle={"Personas apasionadas"} />
-      <div className="flex flex-row gap-5 justify-center flex-wrap">
+      <div className="flex flex-row gap-5 justify-center flex-wrap mt-2 md:mt-4 lg:mt-6">
         {teamMembers.map((member) => (
           <TeamCard member={member} key={nanoid()} />
         ))}

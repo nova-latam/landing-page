@@ -1,11 +1,6 @@
+import { Hero } from "@/components/views/about-us";
 import React from "react";
 
 export default function AboutUs() {
-  return (
-    <main className="min-h-screen min-w-screen px-2 pb-10">
-      <div>
-        <p>Sobre Nosotros</p>
-      </div>
-    </main>
-  );
+  return <Hero />;
 }
