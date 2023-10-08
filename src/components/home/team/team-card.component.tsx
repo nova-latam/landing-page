@@ -1,6 +1,6 @@
 import React from "react";
 import { TeamMember } from "./team.type";
-import { InstagramLink, LinkedInLink } from "@/components/common/links";
+import { SocialLink, socialLinksData } from "@/components/common/links";
 import Image from "next/image";
 import { Text } from "@/components/common/text";
 
@@ -31,8 +31,8 @@ export default function TeamCard({ member }: { member: TeamMember }) {
           {member.name}
         </Text>
         <div className="flex flex-row gap-2">
-          <InstagramLink href={member.linkedin} />
-          <InstagramLink href={member.instagram} />
+          <SocialLink socialLinkData={socialLinksData.instagram} />
+          <SocialLink socialLinkData={socialLinksData.linkedin} />
         </div>
       </div>
       <div className="flex-col justify-center items-center">

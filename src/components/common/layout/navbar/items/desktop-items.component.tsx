@@ -7,7 +7,7 @@ import { MenuItem } from "../navbar.lib";
 
 export default function DesktopItems({ menuItems }: { menuItems: MenuItem[] }) {
   return (
-    <ul className="hidden sm:flex gap-4 sm:justify-between">
+    <ul className="hidden w-full sm:flex gap-4 sm:justify-between items-center ">
       {menuItems.map((item) => (
         <li key={nanoid()} className="text-primary-0">
           <Link href={item.href}>
