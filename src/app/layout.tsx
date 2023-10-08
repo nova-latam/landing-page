@@ -2,7 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 
-import Layout from "@/components/common/layout";
+import Layout from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Nova Club | Creadores del futuro",
@@ -23,8 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className="bg-primary-50 dark:bg-primary-950">
-          <Layout>{children}</Layout>
+      <body className="antialiased w-screen">
+        <Layout>
+          <main className="bg-primary-50 dark:bg-primary-950 transition-colors duration-1000">
+            {children}
+          </main>
+        </Layout>
       </body>
     </html>
   );

@@ -2,47 +2,44 @@ import React from "react";
 import { TeamMember } from "./team.type";
 import { SocialLink, socialLinksData } from "@/components/common/links";
 import Image from "next/image";
-import { Text } from "@/components/common/text";
+import { Card } from "@/components/common/cards";
+import { textSizes } from "@/components/common/text/text-sizes.lib";
 
 export default function TeamCard({ member }: { member: TeamMember }) {
   return (
-    <div className="p-8 flex flex-col justify-start w-80 min-w-[150px] min-h-[250px] max-w-[450px] max-h-[600px] 
-    rounded-xl gap-8 bg-primary/80 dark:bg-primary-800 shadow-lg">
-      <div className="flex justify-center items-center">
-        <Text
-          className="font-semibold text-primary-1000 dark:text-primary-0"
-          size="md"
+    <Card className="flex flex-col justify-between items-center gap-4 md:gap-6 h-[24rem] w-[16rem] md:h-[36rem] md:w-[18rem] bg-blend-darken shadow-lg hover:scale-105 ease-linear duration-300">
+      <div>
+        <p
+          className={`font-semibold text-primary-1000 dark:text-primary-0 ${textSizes.lg}`}
         >
           {member.title}
-        </Text>
+        </p>
       </div>
-      <div className="flex flex-col justify-center items-center gap-3">
+      <div className="flex flex-col justify-center items-center gap-x-4 gap-y-3">
         <Image
           src={member.img}
           width={100}
           height={100}
-          className="w-60 h-60 text-large rounded-full"
+          className="w-40 h-40 md:w-60 md:h-60 text-large rounded-full"
           alt={`${member.name} picture`}
         />
-        <Text
-          className="font-medium text-primary-950 dark:text-primary-50"
-          size="md"
+        <p
+          className={`font-medium text-primary-950 dark:text-primary-50 ${textSizes.md}`}
         >
           {member.name}
-        </Text>
+        </p>
         <div className="flex flex-row gap-2">
           <SocialLink socialLinkData={socialLinksData.instagram} />
           <SocialLink socialLinkData={socialLinksData.linkedin} />
         </div>
       </div>
       <div className="flex-col justify-center items-center">
-        <Text
-          className="text-center italic text-primary-950 dark:text-primary-50"
-          size="sm"
+        <p
+          className={`text-center italic text-primary-950 dark:text-primary-50 ${textSizes.xs}`}
         >
           {member.bio}
-        </Text>
+        </p>
       </div>
-    </div>
+    </Card>
   );
 }

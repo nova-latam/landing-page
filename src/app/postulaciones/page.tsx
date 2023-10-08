@@ -1,10 +1,9 @@
-import { Contact, Team, Hero, Partners, AboutUs } from "@/components/home";
-import Sponsors from "@/components/home/sponsors.component";
+import ApplicationForm from "./form.component";
 
 export default function App() {
   return (
-    <main>
-      
+    <main className="w-screen h-screen">
+      <ApplicationForm />
     </main>
   );
 }

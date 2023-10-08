@@ -5,7 +5,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Alex Padilla',
         title: 'Presidente',
         img: '/images/team/alex-padilla.png',
-        bio: '"Las startups impulsan la recuperación económica mientras construyen el futuro" - Ariel Katz',
+        bio: '"Innovación y tecnología para el desarrollo sostenible"',
         instagram: 'https://www.instagram.com/padimaster/',
         linkedin: 'https://www.linkedin.com/in/hilmalex/',
     },

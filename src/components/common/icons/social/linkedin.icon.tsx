@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function LinkedinIcon() {
+export default function LinkedinIcon({ className }: { className?: string }) {
   return (
     <svg
       width="20"
       height="20"
       fill="currentColor"
-      className="bi bi-linkedin text-white"
+      className={className}
       viewBox="0 0 16 16"
     >
       {" "}

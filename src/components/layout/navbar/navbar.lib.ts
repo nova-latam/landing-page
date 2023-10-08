@@ -5,11 +5,7 @@ export interface MenuItem {
 
 export const menuItems: MenuItem[] = [
     {
-        name: "Inicio",
-        href: "/"
-    },
-    {
-        name: "Sobre Nosotros",
+        name: "Sobre Nova",
         href: "/sobre-nosotros"
     },
     {

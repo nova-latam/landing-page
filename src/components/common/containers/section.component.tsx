@@ -8,7 +8,10 @@ export default function Section({
   className?: string;
 }) {
   return (
-    <section className={`min-h-screen min-w-screen flex flex-col justify-center items-center p-6 gap-4 bg-primary-50 dark:bg-primary-950 ${className}`}>
+    <section
+      className={`py-4 w-screen min-h-screen flex flex-col justify-center items-center bg-primary-50 dark:bg-primary-950 
+    transition-colors duration-1000 ${className}`}
+    >
       {children}
     </section>
   );

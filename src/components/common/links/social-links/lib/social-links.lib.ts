@@ -1,5 +1,5 @@
-import InstagramIcon from "../icons/instagram.icon";
-import LinkedinIcon from "../icons/linkedin.icon";
+import InstagramIcon from "../../../icons/social/instagram.icon";
+import LinkedinIcon from "../../../icons/social/linkedin.icon";
 import { SocialLinkProps } from "../types/social-link.type";
 
 export const socialLinksData: { [key: string]: SocialLinkProps } = {

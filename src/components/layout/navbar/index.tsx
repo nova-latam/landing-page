@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useEffect } from "react";
+import Link from "next/link";
+
 import { menuItems } from "./navbar.lib";
 import { Button } from "@/components/common/buttons";
 import DesktopItems from "./items/desktop-items.component";
 import DarkModeButton from "./buttons/dark-mode-button.component";
-import ApplyButton from "./buttons/apply-button.component";
 import { LogoWords } from "@/components/common/logos";
-import Link from "next/link";
+import { HamburgerMenu } from "@/components/common/icons/navbar";
+import { textSizes } from "@/components/common/text";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -44,25 +46,31 @@ export default function Navbar() {
 
   return (
     <header className="w-screen">
-      <nav className="p-4 w-full z-40 h-16 grid grid-cols-[1fr,3fr,1fr] justify-center content-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md">
-        <div className="flex justify-center items-center col-start-1 col-end-1">
+      <nav className="px-4 sm:px-8 md:px-10 lg:px-24 w-full z-40 h-16 flex flex-row items-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md transition-colors duration-1000">
+        <div className="w-[30%] md:[20%] flex justify-start items-center">
           <Link href={"/"}>
             <LogoWords isDark={darkMode} />
           </Link>
-          <div className="flex sm:hidden">
-            <Button aria-label={isMenuOpen ? "Cerrar menu" : "Abrir menu"}>
-              -
-            </Button>
+        </div>
+
+        <div className="w-[40%] md:w-[60%] flex justify-center items-center">
+          <DesktopItems menuItems={menuItems} />
+          <div className="flex sm:hidden justity-center items-center gap-2">
+            <button className={"h-12 w-12"}>
+              <HamburgerMenu />
+            </button>
           </div>
         </div>
 
-        <div className="col-span-3 px-24 flex items-center">
-          <DesktopItems menuItems={menuItems} />
-        </div>
-
-        <div className="flex flex-row gap-2 col-start-5 col-end-5 justify-center items-center">
-          <DarkModeButton onClick={toggleDarkMode} />
-          <ApplyButton />
+        <div className="w-[30%] md:[20%] flex flex-row gap-4 justify-end items-center">
+          <span className="hidden md:block">
+            <DarkModeButton darkMode={darkMode} onClick={toggleDarkMode} />
+          </span>
+          <Link href={"/postulaciones"}>
+            <Button>
+              <span className={textSizes.sm}>Únete</span>
+            </Button>
+          </Link>
         </div>
       </nav>
     </header>
