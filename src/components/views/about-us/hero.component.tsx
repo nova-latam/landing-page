@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Section>
       <SectionTitle title={"Sobre Nosotros"} />
-      <SectionSubtitle subtitle={"No dudes en contactarnos"} />
+      <SectionSubtitle subtitle={"En construcción..."} />
     </Section>
   );
 }

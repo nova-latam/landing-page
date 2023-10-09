@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="es" className="scroll-smooth">
       <body className="antialiased">
         <Layout>
           <main className="bg-primary-50 dark:bg-primary-950 transition-colors duration-1000">

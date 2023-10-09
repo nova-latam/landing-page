@@ -1,3 +1,4 @@
-import Hero from './hero.component';
+import EventTemplate from "./template/event-template.component";
+import Hero from "./hero.component";
 
-export { Hero };
+export { EventTemplate, Hero };

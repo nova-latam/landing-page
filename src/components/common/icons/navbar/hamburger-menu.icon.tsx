@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HamburgerMenu() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" className="text-primary-1000 dark:text-primary-50">
+    <svg width={23} height={23} viewBox="0 0 24 24" fill="none" className="text-primary-1000 dark:text-primary-50">
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
