@@ -11,11 +11,11 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: 'Xavier Tintin',
-        title: 'President',
-        img: '/images/team/alex-padilla.png',
-        bio: 'Innovación y tecnología para el desarrollo sostenible"',
-        instagram: 'https://www.instagram.com/padimaster/',
-        linkedin: 'https://www.linkedin.com/in/hilmalex/',
+        title: 'Vice President',
+        img: '/images/team/xavier-tintin.png',
+        bio: 'Be vacant, and you will remain full',
+        instagram: 'https://www.instagram.com/alextintin_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr',
+        linkedin: 'https://www.linkedin.com/in/xavier-tintin/',
     },
     {
         name: 'Marcela Montalvo',
