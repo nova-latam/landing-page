@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <Section className="bg-[url('/images/hero/bg.jpg')]">
       <Image
-        src={"/images/logos/nova-full-1000x600.png"}
+        src={"/images/logos/full.png"}
         alt="Nova Club full logo"
         className=""
         height={1000}

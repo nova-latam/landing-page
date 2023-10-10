@@ -3,7 +3,7 @@ export interface Speaker {
     position: string;
     bio: string;
     image: string;
-    url: string;
+    linkedin: string;
 }
 
 export interface Conference {

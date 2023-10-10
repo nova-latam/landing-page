@@ -9,15 +9,18 @@ export default function OrganizationCard({
 }: {
   organization: OrganizationProps;
 }) {
+  const {
+    logo: { height, width },
+  } = organization;
+
   return (
-    <div className="hover:scale-105 h-60 w-60">
+    <div className="flex items-center justify-center hover:scale-105 h-[6rem] w-[10rem]">
       <Link href={organization.website} target="_blank">
         <Image
-          src={organization.logo}
+          src={organization.logo.src}
           alt={organization.name + " logo"}
-          height={100}
-          width={100}
-          className="w-full h-full"
+          height={organization.logo.height}
+          width={organization.logo.width}
         />
       </Link>
     </div>

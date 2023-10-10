@@ -7,7 +7,7 @@ export default function SpeakerCard({ speaker }: { speaker: Speaker }) {
   return (
     <div className="p-4 flex gap-4">
       <Image
-        src={speaker.url}
+        src={speaker.linkedin}
         alt={`Speaker ${speaker.name} photo`}
         className="rounded-full"
         width={50}

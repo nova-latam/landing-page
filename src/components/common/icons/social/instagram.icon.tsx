@@ -3,8 +3,6 @@ import React from "react";
 export default function InstagramIcon({ className }: { className?: string }) {
   return (
     <svg
-      width="20"
-      height="20"
       fill="currentColor"
       className={className}
       viewBox="0 0 16 16"

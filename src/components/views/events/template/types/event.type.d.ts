@@ -13,4 +13,7 @@ export interface EventData {
   locationSpace?: string;
   locationURL?: string;
   conferences: Conference[];
+  about: {
+    title: string;
+  };
 }

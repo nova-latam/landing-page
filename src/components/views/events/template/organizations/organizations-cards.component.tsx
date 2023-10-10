@@ -9,7 +9,7 @@ export default function OrganizationsCards({
   organizations: OrganizationProps[];
 }) {
   return (
-    <div className="w-full flex flex-row justify-center items-center pt-2 pb-4">
+    <div className="w-full flex flex-row gap-1 md:gap-4 justify-center items-center flex-wrap p-8">
       {organizations.map((organization) => (
         <OrganizationCard key={nanoid()} organization={organization} />
       ))}

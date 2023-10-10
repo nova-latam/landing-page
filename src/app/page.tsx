@@ -4,10 +4,10 @@ export default function App() {
   return (
     <>
       <Hero />
-      <AboutUs />
+      {/* <AboutUs />
       <Partners />
       <Sponsors />
-      <Contact />
+      <Contact /> */}
       <Team />
     </>
   );

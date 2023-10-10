@@ -12,13 +12,20 @@ export default function ConferenceCard({
 }) {
   const { name, speakers } = conference;
   return (
-    <div className="flex flex-col justify-center items-center w-48 md:w-[26rem] px-8">
-      <header className="flex flex-col justify-center items-center">
-        <span className={`bg-primary dark:bg-primary-700 rounded-md w-36 px-2 py-1 text-xs md:text-sm mb-2 flex gap-1`}>
-          <ClockIcon className={"w-4 text-primary-950 dark:text-primary-50"}/>
-          {`${conference.startTime} - ${conference.endTime}`}
+    <div className="flex flex-col justify-center items-start w-full px-8 md:px-16 lg:px-20">
+      <header className="flex flex-row gap-4 justify-center items-center">
+        <span
+          className={`bg-primary dark:bg-primary-700 rounded-md px-2 py-1 text-xs md:text-sm mb-2 flex flex-row gap-1`}
+        >
+          <ClockIcon className={"w-4 text-primary-950 dark:text-primary-50"} />
+          <div>
+            <p>{conference.startTime}</p>
+            <p>{conference.endTime}</p>
+          </div>
         </span>
-        <p className={`text-primary-1000 dark:text-primary-50 ${textSizes.sm} font-semibold`}>
+        <p
+          className={`text-primary-1000 dark:text-primary-50 ${textSizes.sm} font-semibold`}
+        >
           {name}
         </p>
       </header>

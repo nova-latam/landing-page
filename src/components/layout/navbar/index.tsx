@@ -13,43 +13,72 @@ import { textSizes } from "@/components/common/text";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [background, setBackground] = React.useState(
+    "bg-transparent dark:bg-transparent"
+  );
 
-  const [darkMode, setDarkMode] = React.useState(false);
+  const [scroll, setScroll] = React.useState(0);
+  // const [darkMode, setDarkMode] = React.useState(false);
+
+  function handleScroll() {
+    const newScroll = window.scrollY;
+    setScroll(newScroll);
+    if (newScroll > 50) {
+      setBackground("bg-primary dark:bg-primary-1000");
+    } else {
+      setBackground("bg-transparent dark:bg-transparent");
+    }
+  }
 
   useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("light");
-      setDarkMode(true);
-    } else {
-      document.documentElement.classList.add("light");
-      document.documentElement.classList.remove("dark");
-      setDarkMode(false);
-    }
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scroll]);
 
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => !prevMode);
+  // useEffect(() => {
+  //   if (
+  //     localStorage.theme === "dark" ||
+  //     (!("theme" in localStorage) &&
+  //       window.matchMedia("(prefers-color-scheme: dark)").matches)
+  //   ) {
+  //     document.documentElement.classList.add("dark");
+  //     document.documentElement.classList.remove("light");
+  //     setDarkMode(true);
+  //   } else {
+  //     document.documentElement.classList.add("light");
+  //     document.documentElement.classList.remove("dark");
+  //     setDarkMode(false);
+  //   }
 
-    if (darkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "light";
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    }
-  };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
+  // const toggleDarkMode = () => {
+  //   setDarkMode((prevMode) => !prevMode);
+
+  //   if (darkMode) {
+  //     document.documentElement.classList.remove("dark");
+  //     localStorage.theme = "light";
+  //   } else {
+  //     document.documentElement.classList.add("dark");
+  //     localStorage.theme = "dark";
+  //   }
+  // };
 
   return (
     <header className="w-screen">
-      <nav className="px-4 sm:px-8 md:px-10 lg:px-24 w-screen z-40 h-16 flex flex-row items-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md transition-colors duration-1000 bg-transparent dark:bg-transparent">
+      <nav
+        className={`px-4 sm:px-8 md:px-10 lg:px-24 w-screen z-40 h-16 flex flex-row items-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md transition-colors duration-1000 ${background}`}
+      >
         <div className="w-[30%] md:[20%] flex justify-start items-center">
           <Link href={"/"}>
-            <LogoWords isDark={darkMode} />
+            <LogoWords isDark={true} />
           </Link>
         </div>
 
@@ -64,7 +93,7 @@ export default function Navbar() {
 
         <div className="w-[30%] md:[20%] flex flex-row gap-4 justify-end items-center">
           <span className="hidden md:block">
-            <DarkModeButton darkMode={darkMode} onClick={toggleDarkMode} />
+            {/* <DarkModeButton darkMode={darkMode} onClick={toggleDarkMode} /> */}
           </span>
           <Link href={"/postulaciones"}>
             <Button>

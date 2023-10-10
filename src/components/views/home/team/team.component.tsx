@@ -4,7 +4,7 @@ import React from "react";
 import { nanoid } from "nanoid";
 
 import TeamCard from "./team-card.component";
-import { teamMembers } from "./team.lib";
+import { teamMembers } from "@/lib/people/team";
 
 import { SectionSubtitle, SectionTitle } from "@/components/common/text";
 import { Section } from "@/components/common/containers";
