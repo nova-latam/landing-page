@@ -13,7 +13,7 @@ export const teamMembers: TeamMember[] = [
         name: 'Xavier Tintin',
         title: 'Vice President',
         img: '/images/team/xavier-tintin.png',
-        bio: 'Be vacant, and you will remain full',
+        bio: 'Se vacante y permanecerás lleno',
         instagram: 'https://www.instagram.com/alextintin_/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr',
         linkedin: 'https://www.linkedin.com/in/xavier-tintin/',
     },
