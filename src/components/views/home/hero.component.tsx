@@ -16,7 +16,7 @@ export default function Hero() {
         height={1000}
         width={600}
       />
-      <Link href={"/postulaciones"}>
+      <Link href={"https://forms.gle/v48Mjw5RXTApBeCK9"} target="_blank">
         <Button>Aplica Ahora</Button>
       </Link>
     </Section>

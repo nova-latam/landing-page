@@ -95,7 +95,7 @@ export default function Navbar() {
           <span className="hidden md:block">
             {/* <DarkModeButton darkMode={darkMode} onClick={toggleDarkMode} /> */}
           </span>
-          <Link href={"/postulaciones"}>
+          <Link href={"https://forms.gle/v48Mjw5RXTApBeCK9"} target="_blank">
             <Button>
               <span className={textSizes.sm}>Únete</span>
             </Button>

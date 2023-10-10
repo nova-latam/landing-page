@@ -8,7 +8,7 @@ export const EPN: OrganizationProps = {
     width: 100,
     height: 100,
   },
-  website: "",
+  website: "https://epn.edu.ec/",
 };
 
 export const NovaClub: OrganizationProps = {
@@ -19,7 +19,7 @@ export const NovaClub: OrganizationProps = {
     width: 140,
     height: 100,
   },
-  website: "",
+  website: "https://www.linkedin.com/company/nova-club",
 };
 
 export const ImagenSistemas: OrganizationProps = {
@@ -31,5 +31,5 @@ export const ImagenSistemas: OrganizationProps = {
     width: 160,
     height: 50,
   },
-  website: "",
+  website: "https://www.linkedin.com/company/nova-club",
 };

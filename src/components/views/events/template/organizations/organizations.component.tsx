@@ -14,10 +14,12 @@ import Speakers from "../speakers/speakers.component";
 export default function Organizations() {
   return (
     <Section className="flex flex-col gap-4">
+      <span className="w-full p-[0.024rem] mb-10 bg-primary-0"></span>
       <div>
         <SectionTitle title="Speakers" />
         <Speakers speakers={speakers} />
       </div>
+      <span className="w-full p-[0.024rem] mt-0 mb-10 md:my-10 bg-primary-0"></span>
       <div>
         <SectionTitle title="Hosts" />
         <OrganizationsCards organizations={hosts} />

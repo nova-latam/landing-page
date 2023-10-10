@@ -13,7 +13,7 @@ export const CarlosZaldumbide: Speaker = {
     position: "Director Ejecutivo Cámara  de Comercio de Quito",
     bio: "Director Ejecutivo Cámara  de Comercio de Quito y Secretario General del Comité Nacional de ICC Ecuador",
     image: "/images/speakers/carlos-zaldumbide.jpg",
-    linkedin: "https://www.linkedin.com/in/carlos-zaldumbide/",
+    linkedin: "https://www.linkedin.com/in/carlos-zaldumbide-4b3197151/",
 }
 
 export const FranciscoAbad: Speaker = {
