@@ -17,7 +17,7 @@ export const eventData: EventData = {
         name: "Recepción de Invitados",
         description: "",
         startTime: "16h30",
-        endTime: "16h30",
+        endTime: "17h00",
         //speakers: [speakers.CarlosZaldumbide],
       },
       {
@@ -39,7 +39,7 @@ export const eventData: EventData = {
         endTime: "18h10",
       },
       {
-        name: "Presentación Esquel y Ecuador Jóven",
+        name: "Esquel y Ecuador Jóven",
         description: "",
         startTime: "18h10",
         endTime: "18h15",

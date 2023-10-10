@@ -15,11 +15,12 @@ export default function ConferenceCard({
     <div className="flex flex-col justify-center items-start w-full px-8 md:px-16 lg:px-20">
       <header className="flex flex-row gap-4 justify-center items-center">
         <span
-          className={`bg-primary dark:bg-primary-700 rounded-md px-2 py-1 text-xs md:text-sm mb-2 flex flex-row gap-1`}
+          className={`bg-primary dark:bg-primary rounded-md px-2 py-1 text-xs md:text-sm flex flex-row gap-1 justify-center items-center`}
         >
           <ClockIcon className={"w-4 text-primary-950 dark:text-primary-50"} />
-          <div>
+          <div className="flex flex-col sm:flex-row gap-1 md:gap-3 md:w-28">
             <p>{conference.startTime}</p>
+            <span className="hidden sm:inline">-</span>
             <p>{conference.endTime}</p>
           </div>
         </span>

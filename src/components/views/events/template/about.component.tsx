@@ -59,7 +59,7 @@ export default function About({ eventData }: { eventData: EventData }) {
             className="mb-4 md:mb-8"
           />
 
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full gap-5">
             {eventData.conferences.map((conference) => (
               <ConferenceCard key={nanoid()} conference={conference} />
             ))}
