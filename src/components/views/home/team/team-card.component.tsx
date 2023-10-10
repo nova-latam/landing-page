@@ -1,6 +1,5 @@
 import React from "react";
 import { TeamMember } from "./team.type";
-import { SocialLink, socialLinksData } from "@/components/common/links";
 import Image from "next/image";
 import { Card } from "@/components/common/cards";
 import { textSizes } from "@/components/common/text/text-sizes.lib";

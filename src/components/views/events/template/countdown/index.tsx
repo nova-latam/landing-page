@@ -39,7 +39,7 @@ export default function Countdown({ date }: { date: string }) {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [date]);
 
   return (
     <div className="md:mt-10 flex items-center justify-center space-x-5 sm:space-x-10 lg:space-x-20">
