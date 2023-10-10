@@ -3,7 +3,6 @@ export interface TeamMember {
     title: string;
     bio: string;
     img: string;
-    instagram: string;
     linkedin: string;
     //github: string;
     //twitter?: string;

@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <Section>
+    <Section className="bg-[url('/images/hero/bg.jpg')]">
       <Image
         src={"/images/logos/nova-full-1000x600.png"}
         alt="Nova Club full logo"

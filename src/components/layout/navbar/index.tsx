@@ -46,7 +46,7 @@ export default function Navbar() {
 
   return (
     <header className="w-screen">
-      <nav className="px-4 sm:px-8 md:px-10 lg:px-24 w-full z-40 h-16 flex flex-row items-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md transition-colors duration-1000">
+      <nav className="px-4 sm:px-8 md:px-10 lg:px-24 w-screen z-40 h-16 flex flex-row items-center fixed top-0 bg-primary dark:bg-primary-1000 shadow-md transition-colors duration-1000 bg-transparent dark:bg-transparent">
         <div className="w-[30%] md:[20%] flex justify-start items-center">
           <Link href={"/"}>
             <LogoWords isDark={darkMode} />

@@ -12,7 +12,7 @@ export default function Section({
   return (
     <section
       className={`px-4 sm:px-8 md:px-10 lg:px-24 py-4 w-full min-h-screen relative flex flex-col justify-center items-center bg-primary-50 dark:bg-primary-950 
-    transition-colors duration-1000 ${className}`}
+    transition-colors duration-1000 ${className} bg-[url('/images/hero/bg.jpg')]`}
       id={id}
     >
       {children}

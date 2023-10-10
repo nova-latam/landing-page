@@ -4,13 +4,15 @@ import { SocialLink, socialLinksData } from "@/components/common/links";
 import Image from "next/image";
 import { Card } from "@/components/common/cards";
 import { textSizes } from "@/components/common/text/text-sizes.lib";
+import Link from "next/link";
+import { LinkedinIcon } from "@/components/common/icons/social";
 
 export default function TeamCard({ member }: { member: TeamMember }) {
   return (
     <Card className="flex flex-col justify-between items-center gap-4 md:gap-6 h-[24rem] w-[16rem] md:h-[36rem] md:w-[18rem] bg-blend-darken shadow-lg hover:scale-105 ease-linear duration-300">
       <div>
         <p
-          className={`font-semibold text-primary-1000 dark:text-primary-0 ${textSizes.lg}`}
+          className={`font-semibold text-center text-primary-1000 dark:text-primary-0 ${textSizes.lg}`}
         >
           {member.title}
         </p>
@@ -29,8 +31,13 @@ export default function TeamCard({ member }: { member: TeamMember }) {
           {member.name}
         </p>
         <div className="flex flex-row gap-2">
-          <SocialLink socialLinkData={socialLinksData.instagram} />
-          <SocialLink socialLinkData={socialLinksData.linkedin} />
+          <Link
+            className="flex justify-center items-center gap-2"
+            href={member.linkedin}
+            target="_blank"
+          >
+            <LinkedinIcon />
+          </Link>
         </div>
       </div>
       <div className="flex-col justify-center items-center">

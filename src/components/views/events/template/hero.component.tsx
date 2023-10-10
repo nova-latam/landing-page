@@ -20,7 +20,7 @@ export default function Hero({
   link,
 }: any) {
   return (
-    <Section>
+    <Section className="bg-[url('/images/hero/bg.jpg')]">
       <SectionTitle title={title} className={`mb-4 ${textSizes["2xl"]}`} />
       <SectionSubtitle subtitle={subtitle} className={`mb-8 ${textSizes["xl"]}`}/>
       <Countdown date={date}/>
