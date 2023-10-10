@@ -13,7 +13,7 @@ export default function SectionSubtitle({
   return (
     <h2
       className={twMerge(
-        `font-medium text-primary-900 dark:text-primary-100 text-center ${textSizes.xl}`,
+        `font-medium text-primary-900 dark:text-primary-100 text-center ${textSizes["lg"]}`,
         className
       )}
     >

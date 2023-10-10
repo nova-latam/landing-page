@@ -27,11 +27,11 @@ export const teamMembers: TeamMember[] = [
     },
     {
         name: 'Carol Velásquez',
-        title: 'President',
-        img: '/images/team/alex-padilla.png',
+        title: 'Tesorera',
+        img: '/images/team/carol.jpeg',
         bio: 'Innovación y tecnología para el desarrollo sostenible"',
-        instagram: 'https://www.instagram.com/padimaster/',
-        linkedin: 'https://www.linkedin.com/in/hilmalex/',
+        instagram: 'https://instagram.com/abi_cvc',
+        linkedin: 'https://www.linkedin.com/in/carol-velasquez-cando',
     },
     {
         name: 'Max Carrión',

@@ -21,8 +21,8 @@ export default function Hero({
 }: any) {
   return (
     <Section>
-      <SectionTitle title={title} className="mb-4" />
-      <SectionSubtitle subtitle={subtitle} className="mb-8"/>
+      <SectionTitle title={title} className={`mb-4 ${textSizes["2xl"]}`} />
+      <SectionSubtitle subtitle={subtitle} className={`mb-8 ${textSizes["xl"]}`}/>
       <Countdown date={date}/>
       <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
         <Link

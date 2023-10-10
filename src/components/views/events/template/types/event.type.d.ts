@@ -1,3 +1,5 @@
+import { Conference } from "./schedule.type";
+
 export interface EventData {
   title: string;
   subtitle: string;
@@ -10,4 +12,5 @@ export interface EventData {
   locationAddress?: string;
   locationSpace?: string;
   locationURL?: string;
+  conferences: Conference[];
 }

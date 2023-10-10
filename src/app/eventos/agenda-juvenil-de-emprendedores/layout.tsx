@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-//Faltan algunos detalles pero si la tendremos lista jajaj https://www.novaclub.tech/eventos/agenda-juvenil-de-emprendedores
+
 export const metadata: Metadata = {
   title: "Agenda Juvenil de Emprendedores",
   description:

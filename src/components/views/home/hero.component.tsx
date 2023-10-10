@@ -12,6 +12,7 @@ export default function Hero() {
       <Image
         src={"/images/logos/nova-full-1000x600.png"}
         alt="Nova Club full logo"
+        className=""
         height={1000}
         width={600}
       />

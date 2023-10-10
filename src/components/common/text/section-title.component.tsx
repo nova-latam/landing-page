@@ -12,7 +12,7 @@ export default function SectionTitle({
   return (
     <h3
       className={twMerge(
-        `font-bold text-primary-950 dark:text-primary-50 text-center ${textSizes["2xl"]}`,
+        `font-bold text-primary-950 dark:text-primary-50 text-center ${textSizes["xl"]}`,
         className
       )}
     >
