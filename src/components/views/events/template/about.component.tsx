@@ -26,8 +26,10 @@ export default function About({ eventData }: { eventData: EventData }) {
             >
               Este evento está diseñado para facilitar la participación de
               jóvenes emprendedores y desarrollar una agenda que brinde
-              beneficios sustanciales a la comunidad empresarial. Destacados
-              ponentes principales, talleres interactivos y sesiones de
+              beneficios sustanciales a la comunidad empresarial.
+              <br />
+              <br />
+              Destacados ponentes principales, talleres interactivos y sesiones de
               presentación ofrecerán a los asistentes una oportunidad única para
               ampliar sus conocimientos y establecer conexiones dentro del
               ecosistema empresarial.
