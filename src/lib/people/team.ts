@@ -32,9 +32,9 @@ export const teamMembers: TeamMember[] = [
     {
         name: 'Max Carrión',
         title: 'Co-director de Marketing',
-        img: '/images/team/alex-padilla.png',
-        bio: 'Innovación y tecnología para el desarrollo sostenible"',
-        linkedin: 'https://www.linkedin.com/in/hilmalex/',
+        img: '/images/team/max-carrion.jpeg',
+        bio: 'Guiando con Visión y Pasión, Hacia un Futuro Tecnológico Sostenible"',
+        linkedin: 'https://www.linkedin.com/in/max-carrion-257186172/',
     },
     {
         name: 'Elian',

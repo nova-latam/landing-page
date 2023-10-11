@@ -9,7 +9,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`p-6 md:p-8 rounded-xl bg-primary dark:bg-primary-800
+      className={`p-6 rounded-xl bg-primary dark:bg-primary-800
       ${className}`}
     >
       {children}
