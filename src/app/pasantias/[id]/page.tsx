@@ -8,7 +8,7 @@ export default function Details({ params }: any) {
   const item = internships.find((item:any) => item.id == id)
 
 
-  return <div className=" text-black my-20">
+  return <div className=" text-black my-20 w-[70%] m-auto">
       <ViewDetails  information={item}/>
   </div>
 
