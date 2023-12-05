@@ -1,8 +1,8 @@
+import { Footer, Header } from "@/components/layout";
 import "./globals.css";
 
 import type { Metadata } from "next";
 
-import Layout from "@/components/layout";
 
 export const metadata: Metadata = {
   title: "Nova Club | Creadores del futuro",
@@ -24,11 +24,11 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth dark">
       <body className="antialiased">
-        <Layout>
+        <Header/>
           <main className="bg-primary-50 dark:bg-primary-950 transition-colors duration-1000">
             {children}
           </main>
-        </Layout>
+        <Footer/>
       </body>
     </html>
   );
