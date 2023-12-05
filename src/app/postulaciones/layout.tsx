@@ -1,4 +1,3 @@
-import Layout from "@/components/layout";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
