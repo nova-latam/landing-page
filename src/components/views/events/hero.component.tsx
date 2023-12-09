@@ -19,18 +19,33 @@ export default function Hero() {
     <Section className={"bg-[url('/images/hero/bg.jpg')]"}>
       <SectionTitle title="Eventos" />
       <SectionSubtitle subtitle="Alcanza tu siguiente nivel" />
-      <div className="mt-10 flex gap-4">
+      <div className="mt-10 flex gap-4 flex-wrap justify-center">
         {eventsData.map((event) => (
-          <Card key={nanoid()} className="w-72">
-            <Link href={event.link} target="_blank">
-              <CardHeader>
-                <CardTitle className="text-center">{event.name}</CardTitle>
-                <CardDescription></CardDescription>
+          <Card
+            key={nanoid()}
+            className="w-72 hover:scale-105 transition-all duration-300"
+          >
+            <Link href={event.link} target="_blank" rel="norefer noopener">
+              <CardHeader className="items-center">
+                <CardTitle className="h-12 flex justify-center items-center text-center">
+                  {event.name}
+                </CardTitle>
+                <CardDescription className="text-justify line-clamp-3">
+                  {event.description}
+                </CardDescription>
               </CardHeader>
-              <CardContent>
-                <Image src={""} alt="" height={200} width={200} className="" />
+              <CardContent className="flex flex-col justify-center items-center">
+                <Image
+                  src={event.cover}
+                  alt=""
+                  height={400}
+                  width={400}
+                  className="w-60 h-60 object-cover rounded-md"
+                />
               </CardContent>
-              <CardFooter></CardFooter>
+              <CardFooter className="text-center italic justify-center">
+                {event.reach}
+              </CardFooter>
             </Link>
           </Card>
         ))}

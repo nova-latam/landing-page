@@ -7,7 +7,7 @@ import { MobileNav } from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 z-50 w-full border-b py-2 bg-white backdrop-blur">
+    <header className="fixed top-0 z-50 w-full border-b px-16 py-2 bg-white backdrop-blur">
       <div className="container flex justify-between h-14 items-center">
         <Link href={"/"}>
           <Image
@@ -15,7 +15,7 @@ export default function Header() {
             alt="Hult Prize logo"
             width={200}
             height={100}
-            className="h-8"
+            className="h-8 w-24"
           />
         </Link>
         <MainNav />
