@@ -1,6 +1,6 @@
 import React from "react";
 
-import { EventTemplate } from "@/components/views/events";
+import { EventTemplate, Hero } from "@/components/views/events";
 import { eventData } from "@/lib/events/agenda-juvenil-de-emprendedores";
 import { Section } from "@/components/common/containers";
 import { SectionSubtitle, SectionTitle } from "@/components/common/text";
@@ -9,10 +9,7 @@ import { SectionSubtitle, SectionTitle } from "@/components/common/text";
 export default function Eventos() {
   return (
     <>
-      <Section>
-        <SectionTitle title={""} ></SectionTitle>
-        <SectionSubtitle subtitle={""}></SectionSubtitle>
-      </Section>
+      <Hero/>
     </>
   );
 }

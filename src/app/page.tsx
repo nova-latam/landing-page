@@ -8,7 +8,6 @@ export default function App() {
       <Partners />
       <Sponsors />
       <Contact /> */}
-      <Team />
     </>
   );
 }
