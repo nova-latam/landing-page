@@ -4,11 +4,15 @@ export const navItems = [
     link: "/sobre-nosotros",
   },
   {
-    name: "Cómo participar",
-    link: "/como-participar",
+    name: "Eventos",
+    link: "/eventos",
   },
   {
-    name: "Casos de éxito",
-    link: "/casos-exitos",
+    name: "Recursos",
+    link: "/recursos",
   },
+  {
+    name: "Proyectos",
+    link: "/proyectos",
+  }
 ];
