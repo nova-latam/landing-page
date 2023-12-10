@@ -9,7 +9,6 @@ export default function Card({ information }: any) {
       <div className="mb-4 sm:flex items-center justify-between">
         <div >
           <h2 className="text-xl font-bold">{information.title}</h2>
-          <p className="text-xl font-semibold">{information.place}</p>
           <h3 className="my-4 text-lg font-bold">{information.company}</h3>
         </div>
         <img src={information.logo} alt={information.company} className='w-24 sm:mr-10 m-auto' />
@@ -18,11 +17,11 @@ export default function Card({ information }: any) {
 
 
       <div className="mb-4">
-        <h3 className="text-lg font-bold text-[#489cb4]">Descripción del trabajo</h3>
+        <h3 className="text-lg font-bold text-[#489cb4]">About Us</h3>
         
         <p>
-          {information.jobDescription.substring(0, 200)}
-          <span className=' hidden sm:inline'>{information.jobDescription.substring(200, 300)}</span>
+          {information.companyDescription.substring(0, 200)}
+          <span className=' hidden sm:inline'>{information.companyDescription.substring(200, 300)}</span>
           ...
         </p>
       </div>
