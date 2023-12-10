@@ -1,45 +1,38 @@
+import { count } from 'console'
 import Image from 'next/image'
 import Link from "next/link"
 
 
 export default function ViewDetails({ information }: any) {
+  const more_information = Object.keys(information).slice(6)
+
   return (
     <div className="text-white p-6 my-10">
-
-<div className="mb-4 sm:flex items-center justify-between">
+      
+      <div className="mb-4 sm:flex items-center justify-between">
         <div >
           <h2 className="text-xl font-bold">{information.title}</h2>
-          <p className="text-xl font-semibold">{information.place}</p>
           <h3 className="my-4 text-lg font-bold">{information.company}</h3>
         </div>
         <img src={information.logo} alt={information.company} className='w-24 sm:mr-10 m-auto' />
       </div>
-      
+
 
       <div className="mb-4">
-        <h3 className="text-lg font-semibold">Descripción del trabajo</h3>
-        <p>{information.jobDescription}</p>
+        <h3 className="text-lg font-bold text-[#489cb4]">About Us</h3>
+        <p>{information.companyDescription}</p>
       </div>
 
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold">Calificaciones</h3>
-        <p>{information.qualifications}</p>
-      </div>
 
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold">Información Adicional</h3>
-        <p>{information.additionalInformation}</p>
-      </div>
 
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold">Fechas de Llegada Posibles</h3>
-        <p>{information.possibleArrivalDates}</p>
-      </div>
+      {more_information.map((element, index) => (
+        <div className="mb-4" key={index}>
+          <h3 className="text-lg font-bold text-[#489cb4]">{information[element][0]}</h3>
+          <p>{information[element][1]}</p>
+        </div>
+      ))}
 
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold">Documentación Requerida</h3>
-        <p>{information.requiredDocumentation}</p>
-      </div>
+
 
 
       <h3 className="text-lg font-semibold">Información obtenida de  <span className='text-[#489cb4]'><a href={information.linkOfficial}>{information.company}</a></span></h3>
