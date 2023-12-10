@@ -9,7 +9,7 @@ export const navItems = [
   },
   {
     name: "Recursos",
-    link: "/recursos",
+    link: "/pasantias",
   },
   {
     name: "Proyectos",
