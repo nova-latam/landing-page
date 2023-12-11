@@ -17,8 +17,8 @@ export function MainNav() {
             key={`mobile-item-${item.name}`}
             href={item.link}
             className={cn(
-              "transition-colors hover:text-[#0E9AAD]/80",
-              pathname === item.link ? "text-[#0E9AAD]" : "text-slate-950"
+              "transition-colors hover:text-cyan-950/70 font-bold",
+              pathname === item.link ? "text-white" : "text-cyan-950"
             )}
           >
             {item.name}

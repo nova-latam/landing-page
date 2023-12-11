@@ -16,11 +16,18 @@ export const teamMembers: TeamMember[] = [
         linkedin: 'https://www.linkedin.com/in/xavier-tintin/',
     },
     {
-        name: 'Marcela Montalvo',
-        title: 'Directora de Marketing',
-        img: '/images/team/marce.jpeg',
-        bio: 'Innovación y tecnología para el desarrollo sostenible',
-        linkedin: 'https://media.licdn.com/dms/image/D4E03AQG4pZXLFrtO2A/profile-displayphoto-shrink_800_800/0/1696819054140?e=1702512000&v=beta&t=oBVHzvtnsq_aVhPS-ejjd1Ep4MQwVoNZjM3M5t9bopk',
+        name: 'Enrique Piedra',
+        title: 'Chief Technology Officer',
+        img: '/images/team/enrique-piedra.jpeg',
+        bio: 'Ayudar no cuesta nada pero la recompensa que sientes es enorme',
+        linkedin: 'https://www.linkedin.com/in/enrique-piedra-romero-414996275/',
+    },
+    {
+        name: 'Kharol Chicaiza',
+        title: 'Technology Officer',
+        img: '/images/team/kharol-chicaiza.jpeg',
+        bio: 'Compromiso y pasión para una gestión con eficiencia',
+        linkedin: 'https://www.linkedin.com/in/kharol-chicaiza-4a0746221/',
     },
     {
         name: 'Carol Velásquez',
@@ -28,6 +35,13 @@ export const teamMembers: TeamMember[] = [
         img: '/images/team/carol.jpeg',
         bio: 'Compromiso y pasión para una gestión con eficiencia',
         linkedin: 'https://www.linkedin.com/in/carol-velasquez-cando',
+    },
+    {
+        name: 'Marcela Montalvo',
+        title: 'Directora de Marketing',
+        img: '/images/team/marce.jpeg',
+        bio: 'Innovación y tecnología para el desarrollo sostenible',
+        linkedin: 'https://media.licdn.com/dms/image/D4E03AQG4pZXLFrtO2A/profile-displayphoto-shrink_800_800/0/1696819054140?e=1702512000&v=beta&t=oBVHzvtnsq_aVhPS-ejjd1Ep4MQwVoNZjM3M5t9bopk',
     },
     {
         name: 'Max Carrión',

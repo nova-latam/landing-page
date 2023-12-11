@@ -26,7 +26,7 @@ export default function Team() {
       className="mb-4"/>
       <div className="flex flex-row gap-5 justify-center flex-wrap mt-2 md:mt-4 lg:mt-6">
         {teamMembers.map((member) => (
-          <Card key={`team-${member.name}`} className="w-72">
+          <Card key={`team-${member.name}`} className="w-72 hover:scale-105 transition-all duration-500">
             <CardHeader className="items-center">
               <CardTitle>{member.name}</CardTitle>
               <CardDescription className="">{member.title}</CardDescription>
