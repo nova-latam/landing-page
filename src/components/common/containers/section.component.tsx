@@ -13,7 +13,7 @@ export default function Section({
   return (
     <section
       className={twMerge(
-        `px-4 sm:px-8 md:px-16 lg:px-24 py-8 w-full min-h-screen relative flex flex-col justify-center items-center bg-primary-50 dark:bg-primary-950 
+        `px-8 md:px-16 lg:px-24 py-8 w-full min-h-screen relative flex flex-col justify-center items-center bg-primary-50 dark:bg-primary-950 
         transition-colors duration-1000 bg-[url('/images/hero/bg.jpg')]`,
         className
       )}
