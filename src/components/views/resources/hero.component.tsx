@@ -22,7 +22,7 @@ export default function Hero() {
 
       <div className="mt-10 flex gap-4 flex-wrap justify-center">
 
-        <Card className="w-72 hover:scale-105 transition-all duration-300">
+        <Card className="w-72 hover:scale-105 transition-all duration-300" key={"pasantias"}>
           <Link href="/pasantias" target="_blank" rel="norefer noopener">
             <CardHeader className="items-center">
               <CardTitle className="h-12 flex justify-center items-center text-center">
@@ -31,7 +31,7 @@ export default function Hero() {
               <CardDescription className="text-justify line-clamp-3">
               <Image
                   src="/images/resources/icons8-internship-100.png"
-                  alt=""
+                  alt="Pasantias"
                   height={100}
                   width={100}
                   className="w-20 object-cover rounded-md"
@@ -42,7 +42,7 @@ export default function Hero() {
         </Card>
 
 
-        <Card className="w-72 hover:scale-105 transition-all duration-300">
+        <Card className="w-72 hover:scale-105 transition-all duration-300" key={"fondos"}>
           <Link href="/fondos" target="_blank" rel="norefer noopener">
             <CardHeader className="items-center">
               <CardTitle className="h-12 flex justify-center items-center text-center">
@@ -51,7 +51,7 @@ export default function Hero() {
               <CardDescription className="text-justify line-clamp-3">
               <Image
                   src="/images/resources/icons8-funding-64.png"
-                  alt=""
+                  alt="Fondos"
                   height={100}
                   width={100}
                   className="w-20 object-cover rounded-md"
