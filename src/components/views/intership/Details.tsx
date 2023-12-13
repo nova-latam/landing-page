@@ -8,7 +8,7 @@ export default function ViewDetails({ information }: any) {
 
   return (
     <div className="text-white p-6 my-10">
-      
+
       <div className="mb-4 sm:flex items-center justify-between">
         <div >
           <h2 className="text-xl font-bold">{information.title}</h2>
@@ -24,13 +24,34 @@ export default function ViewDetails({ information }: any) {
       </div>
 
 
+      {more_information.map((element, index) => {
+        if (element === 'tips') {
+          const tips_list = information[element][1]
+   
+          return (
+            <div className="mb-4" key={index}>
+              <h3 className="text-lg font-bold text-[#489cb4]">{information[element][0]}</h3>
+              {tips_list.map((tips_element: any, index_tip: any) => {
+                return (
+                  <div key={index_tip} className='mb-5'>
+                    <p dangerouslySetInnerHTML={{ __html: tips_element[0] }}></p>
+                    {tips_element[1].map((item: any, index_item: any) => (
+                      <p dangerouslySetInnerHTML={{ __html: item }} key={index_item}></p>
+                    ))}
+                  </div>)
+              })}
 
-      {more_information.map((element, index) => (
-        <div className="mb-4" key={index}>
-          <h3 className="text-lg font-bold text-[#489cb4]">{information[element][0]}</h3>
-          <p>{information[element][1]}</p>
-        </div>
-      ))}
+            </div>
+          );
+        }
+        return (
+          <div className="mb-4" key={index}>
+            <h3 className="text-lg font-bold text-[#489cb4]">{information[element][0]}</h3>
+            <p>{information[element][1]}</p>
+          </div>
+        )
+      })}
+
 
 
 

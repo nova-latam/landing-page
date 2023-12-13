@@ -7,7 +7,13 @@ export const internships = [
     companyDescription: 'At CERN, the European Organization for Nuclear Research, physicists and engineers are probing the fundamental structure of the universe. Using the worlds largest and most complex scientific instruments, they study the basic constituents of matter - fundamental particles that are made to collide together at close to the speed of light. The process gives physicists clues about how particles interact, and provides insights into the fundamental laws of nature. Find out more on home.cern.',
     linkOfficial:'https://www.smartrecruiters.com/CERN/743999941597816-cern-summer-student-programme-2024-member-and-non-member-state-',
     jobDescription: ['Job Description','Take part in CERN’s Summer Student Programme! Over a period of 8 to 13 weeks, you will work on an advanced technical project in an experimental or engineering team. During this unique and exciting time, you can attend a series of lectures specially prepared for you where experts and scientists from around the world share their knowledge about a wide range of topics in the fields of theoretical and experimental particle physics, engineering and computing. Visits to the CERN facilities, as well as discussion sessions and workshops are also key features of the programme. Find out more on the Summer Student information page. A short report on your work and project at CERN will be expected at the end of your stay.'],
-    qualifications: ['Qualifications','In order to qualify for a place on the programme you will need to meet the following requirements: You are a Bachelor or Master student (not PhD) in Physics, Engineering, Computer Science or Mathematics and should have completed, by the European Summer 2024, at least 6 semesters of full-time studies in the field, at university level. You will remain registered as a student during your stay at CERN. If you expect to graduate during European summer 2024 (as of May), you are also eligible to apply. You have not worked at CERN before with any other status (Technical Student, Trainee, User or other status) for more than 3 months and you have not been previously a Summer Student at CERN. You have a good knowledge of English; knowledge of French would be an advantage. Candidates of all nationalities are welcome to apply for this Summer Student Programme.']  
+    qualifications: ['Qualifications','In order to qualify for a place on the programme you will need to meet the following requirements: You are a Bachelor or Master student (not PhD) in Physics, Engineering, Computer Science or Mathematics and should have completed, by the European Summer 2024, at least 6 semesters of full-time studies in the field, at university level. You will remain registered as a student during your stay at CERN. If you expect to graduate during European summer 2024 (as of May), you are also eligible to apply. You have not worked at CERN before with any other status (Technical Student, Trainee, User or other status) for more than 3 months and you have not been previously a Summer Student at CERN. You have a good knowledge of English; knowledge of French would be an advantage. Candidates of all nationalities are welcome to apply for this Summer Student Programme.'],  
+    tips:["Application tips",
+      [
+        ["•	Tips by <a href='https://www.linkedin.com/in/giuseppe-steduto/' style='text-decoration: underline;'>Giuseppe Steduto</a> (technical student), advised by <a href='https://www.linkedin.com/in/tiborsimko/' style='text-decoration: underline;'>Tibor Simko</a> (staff member, 25+ years @ CERN)",["&nbsp;&nbsp;&nbsp;» Supervisors get a lot of dossiers, thus they have to screen them: <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Incomplete applications (e.g. missing recommendation letter) are immediately discarded. <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Students without good grades are often not taken into consideration. <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ From the remaining applications (usually a few hundreds), they are filtered based on relevant skill and keywords (e.g. Kubernetes, Python, …), so make sure to list them on the application! <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ From the few dozens of remaining dossiers, usually around 10 are the most competitive and aligned with the requirements of the team, and therefore get contacted by the supervisors for the actual interview to see if there is a match with the project.","&nbsp;&nbsp;&nbsp;» If you get contacted by a supervisor for an interview, research the group and the interviewers a bit! Do your homework on what they do. Search both the names and the section, try to understand roughly what they do and what they may expect you to do for them.","&nbsp;&nbsp;&nbsp;» Be confident and remember that you are expected to contribute to the project, but also to learn a lot while doing it, so you don’t have to know everything beforehand!","&nbsp;&nbsp;&nbsp;» Applications can be very competitive, especially if coming from a non-member state and applying as a summer student (overall success rate for technical student is 10%, for summer student is 3%). To get a better idea, look at the <a href='https://cds.cern.ch/record/2858688/files/CERN-HR-STAFF-STAT-2022.pdf?version=1' style='text-decoration: underline;'>CERN HR Personnel statistics report</a>"]],
+        ["•	Tips by <a href='https://taubytes.com/' style='text-decoration: underline;'>Tau Bytes</a> (blog founded by <a href='https://www.linkedin.com/in/milena137/' style='text-decoration: underline;'>Milena Vujanovic</a>)",["&nbsp;&nbsp;&nbsp;» <a href='https://taubytes.com/cern/03-cv-for-cern-cerncv-help-writing-cv.html' style='text-decoration: underline;'>On the CV</a>","&nbsp;&nbsp;&nbsp;» <a href='https://taubytes.com/cern/02-motivation-letter-for-cern-motivationletter.html' style='text-decoration: underline;'>On the motivational letter</a>","&nbsp;&nbsp;» <a href='https://taubytes.com/cern/01-student-internship-cern-summer-school.html' style='text-decoration: underline;'>On the summer school application in general</a>"]]
+      ]
+    ]
   },  {
     id:'002',
     title: 'All UN application websites and Paid Internships',
@@ -18,7 +24,14 @@ export const internships = [
     first_step:["First step","Create an inspira account: https://inspira.un.org"],
     video:["Video of application","https://inspira-apps.un.org/inspira/videos/external/New_Dashboard-External.mp4"],
     search_map:["Search by map","https://careers.un.org/search-by-map?language=en"],
-    search_expertise:["Search my expertise","https://careers.un.org/area-of-expertise?language=en"]
+    search_expertise:["Search my expertise","https://careers.un.org/area-of-expertise?language=en"],
+    tips:["Application tips",
+    [
+      ["•	Tips by <a href='https://www.linkedin.com/in/katerina-papatheodorou-a933251b2/' style='text-decoration: underline;'>Katerina Papatheodorou</a> (trainee lawyer at the Greek mission at UN Geneva)",["&nbsp;&nbsp;&nbsp;» TBA"]],
+      ["•	Tips by <a href='https://www.linkedin.com/in/daniela-gaus-698287234/' style='text-decoration: underline;'>Daniela Gaus</a> (trainee lawyer at the German mission at UN Geneva)",["&nbsp;&nbsp;&nbsp;» I feel it is kind of random who gets chosen by the German mission","&nbsp;&nbsp;&nbsp;» Be confident and just try, since all the people at the UN are also only humans"]],
+
+    ]
+  ]
   },
   {
     id:'003',
@@ -28,6 +41,15 @@ export const internships = [
     companyDescription: 'UNDP works in about 170 countries and territories, helping to eradicate poverty, reduce inequalities and exclusion, and build resilience so countries can sustain progress. As the UN’s development agency, UNDP plays a critical role in helping countries achieve the Sustainable Development Goals. The Sustainable Development Goals (SDGs), otherwise known as the Global Goals, are a universal call to action to end poverty, protect the planet and ensure that all people enjoy peace and prosperity',
     linkOfficial:'https://www.undp.org/',
     vacancies:["Current Vacancies","https://jobs.undp.org/cj_view_jobs.cfm"],
+    /* 
+    tips:["Application tips",
+    [
+      ["•	Tips by Ludovico Bessi (official Google interviewer)",["&nbsp;&nbsp;&nbsp;» Do a lot of LeetCode:<br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Medium problems: they expect you to be able to solve them <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Hard problems: likely the ones that you will be asked to solve during the interview, you’re not expected to completely solve them, but you should be able to discuss and reason well with the interviewer. They use this to check how good you are at team working and at logical reasoning","&nbsp;&nbsp;&nbsp;» Often the CV screening part is hard to pass - if you can get a referral, it helps you to get directly to the interviews step"]],
+      ["•	Tips by Carmen Marcos",["&nbsp;&nbsp;&nbsp;» TBA"]],
+
+    ]
+  ]
+  */
   },
   {
     id:'004',
