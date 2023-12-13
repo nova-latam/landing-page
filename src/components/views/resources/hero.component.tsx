@@ -35,6 +35,7 @@ export default function Hero() {
                   height={100}
                   width={100}
                   className="w-20 object-cover rounded-md"
+                  key={"pasantias"}
                 />
               </CardDescription>
             </CardHeader>
@@ -55,6 +56,7 @@ export default function Hero() {
                   height={100}
                   width={100}
                   className="w-20 object-cover rounded-md"
+                  key={"fondos"}
                 />
               </CardDescription>
             </CardHeader>
