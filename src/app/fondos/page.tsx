@@ -29,7 +29,7 @@ export default function Funding() {
             <h3 className="text-lg font-bold text-[#489cb4]">Información</h3>
             <p> En el <a href='https://www.epn.edu.ec/descargas-categorias/?upf=dl&id=174733' className='underline'>Reglamento de Becas, Apoyo Económico y Descuentos de la Escuela Politécnica Nacional</a> (Última reforma: 08 de diciembre de 2022 – Resolución RCP-390-2022) en sus artículos 23 y 24 indican las condiciones para que un estudiante pueda recibir apoyo económico.</p>
             <p><br/>Citando los artículos:</p>
-            <p>"(...)Artículo 23.- Los estudiantes de carreras de grado, de tecnología superior o de programas de posgrado de la Escuela Politécnica Nacional podrán acceder al apoyo económico para el financiamiento de las siguientes actividades y eventos:
+            <p>(...)Artículo 23.- Los estudiantes de carreras de grado, de tecnología superior o de programas de posgrado de la Escuela Politécnica Nacional podrán acceder al apoyo económico para el financiamiento de las siguientes actividades y eventos:
               1. Eventos académicos, prácticas preprofesionales o profesionales, pasantías, congresos, seminarios; <br/>
               2. Programas de intercambio estudiantil;<br/>
               3. Representación estudiantil institucional;<br/>
@@ -61,7 +61,7 @@ export default function Funding() {
               5. Haber sido aceptado o invitado para participar en eventos o actividades académicas nacionales o internacionales, según lo establecido en el artículo precedente, en los casos que corresponda.<br/>
               6. Tener un promedio de calificaciones superior al promedio estudiantil de la carrera o programa de maestría o contar con el informe favorable del Director de la Tesis Doctoral, en el caso de los estudiantes de doctorado al que pertenece, o contar con el informe favorable de la Dirección de Bienestar Politécnico, en el caso de los estudiantes con discapacidad;<br/>
               7. Haber aprobado al menos el 50% de créditos u horas académicas de la carrera o programa de posgrado, según corresponda, con la excepción de los programas de doctorado, para quienes no se exige un número mínimo de créditos aprobados; y,<br/>
-              8. No tener obligaciones vencidas con la Institución. (...)"</p>
+              8. No tener obligaciones vencidas con la Institución. (...)</p>
           </div>
         </div>
       </section>
