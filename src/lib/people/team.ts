@@ -23,6 +23,13 @@ export const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/enrique-piedra-romero-414996275/",
   },
   {
+    name: "Giuseppe Steduto",
+    title: "International Member",
+    img: "/images/team/giuseppe-steduto.jpeg",
+    bio: "If I have seen further, it is by standing on the shoulders of giants",
+    linkedin: "https://www.linkedin.com/in/giuseppe-steduto/",
+  },
+  {
     name: "Carol Velásquez",
     title: "Finance Officer",
     img: "/images/team/carol.jpeg",
