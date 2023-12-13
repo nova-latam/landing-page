@@ -26,7 +26,7 @@ export const teamMembers: TeamMember[] = [
     name: "Giuseppe Steduto",
     title: "International Member",
     img: "/images/team/giuseppe-steduto.jpeg",
-    bio: "If I have seen further, it is by standing on the shoulders of giants",
+    bio: "Always burn, never consume yourself out",
     linkedin: "https://www.linkedin.com/in/giuseppe-steduto/",
   },
   {
@@ -40,7 +40,7 @@ export const teamMembers: TeamMember[] = [
     name: "Kharol Chicaiza",
     title: "Technology Officer",
     img: "/images/team/kharol-chicaiza.jpeg",
-    bio: "Innovación y tecnología para el desarrollo sostenible",
+    bio: "Servicio con entrega y dedicación",
     linkedin: "https://www.linkedin.com/in/kharol-chicaiza-4a0746221/",
   },
   {
