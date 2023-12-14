@@ -60,7 +60,7 @@ export default function ViewDetails({ information }: any) {
 
       <div className='w-64 justify-center m-auto mt-10'>
         <Link href={information.linkOfficial}  >
-          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>I'm interested</p>
+          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>I’m interested</p>
         </Link>
       </div>
     </div>
