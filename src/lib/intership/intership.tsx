@@ -138,5 +138,22 @@ export const internships = [
     linkOfficial:'https://www.worldbank.org/',
     internship:["Internships","https://www.worldbank.org/en/about/careers/programs-and-internships"],
   },
+  {
+    id:'013',
+    title: 'Applications to Google',
+    logo: '/interships/google.png',
+    company:'Google',
+    companyDescription: 'Google LLC is a multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, software, quantum computing, e-commerce, and consumer electronics.',
+    linkOfficial:'https://careers.google.com/',
+    application:["Application","Start by visiting the website https://careers.google.com/. Once there, specify the position you would like to apply for and choose the geographical location from which you would like to offer your services to the company. On the platform, you will find a comprehensive list of job openings. Finally, complete the process by submitting your application through the platform."],
+    leetcode:["Leetcode","https://www.linkedin.com/feed/update/urn:li:activity:7140667359672836096/"],
+    tips:["Application tips",
+    [
+      ["•	Tips by Ludovico Bessi (official Google interviewer)",["&nbsp;&nbsp;&nbsp;» Do a lot of LeetCode:<br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Medium problems: they expect you to be able to solve them <br>&nbsp;&nbsp;&nbsp;&nbsp;¤ Hard problems: likely the ones that you will be asked to solve during the interview, you’re not expected to completely solve them, but you should be able to discuss and reason well with the interviewer. They use this to check how good you are at team working and at logical reasoning","&nbsp;&nbsp;&nbsp;» Often the CV screening part is hard to pass - if you can get a referral, it helps you to get directly to the interviews step"]],
+      ["•	Tips by Carmen Marcos",["&nbsp;&nbsp;&nbsp;» TBA"]],
+
+    ]
+  ]
+  },
 
 ];

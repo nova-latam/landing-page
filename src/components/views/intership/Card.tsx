@@ -29,7 +29,7 @@ export default function Card({ information }: any) {
 
       <div className='w-32'>
         <Link href={`/pasantias/${information.id}`}  >
-          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>Ver más</p>
+          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>View More</p>
         </Link>
       </div>
 

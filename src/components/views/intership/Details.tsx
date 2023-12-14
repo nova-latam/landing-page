@@ -56,11 +56,11 @@ export default function ViewDetails({ information }: any) {
 
 
 
-      <h3 className="text-lg font-semibold">Información obtenida de  <span className='text-[#489cb4]'><a href={information.linkOfficial}>{information.company}</a></span></h3>
+      <h3 className="text-lg font-semibold">Information obtained from  <span className='text-[#489cb4]'><a href={information.linkOfficial}>{information.company}</a></span></h3>
 
       <div className='w-64 justify-center m-auto mt-10'>
         <Link href={information.linkOfficial}  >
-          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>Estoy Interesado</p>
+          <p className='text-center rounded-md bg-[#489cb4] text-white text-lg py-1 px-5 hover:bg-[#296474]'>I'm interested</p>
         </Link>
       </div>
     </div>
